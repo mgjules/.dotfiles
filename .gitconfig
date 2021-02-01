@@ -1,0 +1,15 @@
+[user]
+	name = Michaël Giovanni Jules
+	email = julesmichaelgiovanni@gmail.com
+	signingkey = A77BB5EBC7F7BE29
+
+[commit]
+	gpgsign = true
+
+[pull]
+	rebase = false
+
+[init]
+	defaultBranch = main
+[gpg]
+	program = gpg
