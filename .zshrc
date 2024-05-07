@@ -134,6 +134,9 @@ esac
 export PATH="/Users/mike/.nvim/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
+# Change config directory for lazygit.
+export XDG_CONFIG_HOME="$HOME/.config"
+
 # VIM MODE
 # bindkey -v
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
