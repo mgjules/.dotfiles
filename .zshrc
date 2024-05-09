@@ -140,3 +140,5 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # VIM MODE
 # bindkey -v
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(rbenv init - zsh)"
