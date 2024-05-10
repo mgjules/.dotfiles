@@ -79,6 +79,7 @@ DISABLE_AUTO_TITLE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   aws
+  asdf
   bazel
   colored-man-pages
   command-not-found
@@ -133,6 +134,7 @@ esac
 
 export PATH="/Users/mike/.nvim/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/Users/mike/.local/share/gem/ruby/3.1.0/bin:$PATH"
 
 # Change config directory for lazygit.
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -141,4 +143,6 @@ export XDG_CONFIG_HOME="$HOME/.config"
 # bindkey -v
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-eval "$(rbenv init - zsh)"
+# export RUBY_CONFIGURE_OPTS="--with-zlib-dir=$(brew --prefix zlib) --with-openssl-dir=$(brew --prefix openssl@1.1) --with-readline-dir=$(brew --prefix readline) --with-libyaml-dir=$(brew --prefix libyaml) --with-gdbm-dir=$(brew --prefix gdbm)"
+export CFLAGS="-Wno-error=implicit-function-declaration"
+
