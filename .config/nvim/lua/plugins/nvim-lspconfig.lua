@@ -5,8 +5,10 @@ return {
     servers = {
       gopls = {
         settings = {
-          analyses = {
-            fieldalignment = false,
+          gopls = {
+            analyses = {
+              fieldalignment = false,
+            },
           },
         },
       },
