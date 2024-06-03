@@ -1,12 +1,10 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.native_snippets",
     "lazyvim.plugins.extras.coding.yanky",
     "lazyvim.plugins.extras.dap.core",
     "lazyvim.plugins.extras.dap.nlua",
     "lazyvim.plugins.extras.editor.leap",
     "lazyvim.plugins.extras.editor.mini-diff",
-    "lazyvim.plugins.extras.editor.trouble-v3",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.cmake",
     "lazyvim.plugins.extras.lang.docker",
@@ -22,7 +20,7 @@
     "lazyvim.plugins.extras.util.project"
   ],
   "news": {
-    "NEWS.md": "3314"
+    "NEWS.md": "5204"
   },
-  "version": 3
+  "version": 6
 }
