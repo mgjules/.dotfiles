@@ -79,8 +79,8 @@ DISABLE_AUTO_TITLE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   aws
-  asdf
-  bazel
+  # asdf
+  # bazel
   colored-man-pages
   command-not-found
   docker
@@ -89,7 +89,7 @@ plugins=(
   git
   history
   z
-  zsh-vi-mode
+  # zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -119,7 +119,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+# source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -141,8 +141,10 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 # VIM MODE
 # bindkey -v
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # export RUBY_CONFIGURE_OPTS="--with-zlib-dir=$(brew --prefix zlib) --with-openssl-dir=$(brew --prefix openssl@1.1) --with-readline-dir=$(brew --prefix readline) --with-libyaml-dir=$(brew --prefix libyaml) --with-gdbm-dir=$(brew --prefix gdbm)"
 export CFLAGS="-Wno-error=implicit-function-declaration"
 
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
