@@ -24,3 +24,5 @@ _darcs
 
 preview.tape
 preview.gif
+.ssh/id_rsa*
+.ssh/known_hosts*
