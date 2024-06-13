@@ -27,17 +27,17 @@
     // "disable-scroll": false,
     //"all-outputs": true,
     //"warp-on-scroll": false,
-    // "format": "{name}: {icon}",
-    // "format-icons": {
-    //   "1": "",
-    //   "2": "",
-    //   "3": "",
-    //   "4": "",
-    //   "5": "",
-    //   "urgent": "",
-    //   "focused": "",
-    //   "default": "",
-    // },
+    "format": "{icon}",
+    "format-icons": {
+      //   "1": "",
+      //   "2": "",
+      //   "3": "",
+      //   "4": "",
+      //   "5": "",
+      //   "urgent": "",
+      //   "focused": "",
+      "default": "",
+    },
   },
   "hyprland/window": {
     "max-length": 200,
@@ -94,7 +94,8 @@
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "Disconnected ⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+    "on-click": "pidof nmtui || kitty nmtui",
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
