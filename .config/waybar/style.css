@@ -39,7 +39,6 @@ button:hover {
 #workspaces button:last-child {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding-right: 1em;
 }
 
 #workspaces button {
@@ -48,18 +47,33 @@ button:hover {
   /*padding: 0 0.4em;*/
   color: #c0caf5;
   background-color: #24283b;
+  min-width: 20px;
 }
 
 #workspaces button:hover {
-  color: #9274ca;
+  background-color: #9274ca;
+  color: #000000;
+  box-shadow: inherit;
+  text-shadow: inherit;
 }
 
 #workspaces button.active {
-  color: #9274ca;
+  background-color: #9274ca;
+  color: #000000;
 }
 
 #workspaces button.urgent {
   color: #eb4d4b;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0px;
 }
 
 #window {
@@ -74,7 +88,7 @@ button:hover {
   color: #c0caf5;
   background-color: #24283b;
   border-radius: 5px;
-  border: 1px solid #595959;
+  border: 1px solid transparent;
 }
 
 #network,
@@ -82,21 +96,6 @@ button:hover {
 #memory,
 #battery {
   padding-right: 1.4em;
-}
-
-#window,
-#workspaces {
-  margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0px;
 }
 
 .modules-left {
