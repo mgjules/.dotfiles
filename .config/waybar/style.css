@@ -50,10 +50,6 @@ button:hover {
   background-color: #24283b;
 }
 
-#workspaces button label {
-  font-size: 10px;
-}
-
 #workspaces button:hover {
   color: #9274ca;
 }
