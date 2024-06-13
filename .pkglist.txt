@@ -4,6 +4,8 @@ bluez
 bluez-utils
 brightnessctl
 chromium
+cups
+cups-pdf
 dconf-editor
 dunst
 efibootmgr
