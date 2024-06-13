@@ -1,0 +1,12 @@
+1password
+1password-cli
+aconfmgr-git
+ani-cli
+spotify
+topgrade
+ttf-ms-fonts
+wlogout
+xdg-desktop-portal-hyprland-git
+yay
+yay-debug
+zsh-theme-powerlevel10k-git

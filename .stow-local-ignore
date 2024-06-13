@@ -26,3 +26,5 @@ preview.tape
 preview.gif
 .ssh/id_rsa*
 .ssh/known_hosts*
+.pkglist.txt
+.pkglist-foreign.txt
