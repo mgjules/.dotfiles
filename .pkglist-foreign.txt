@@ -4,6 +4,8 @@ aconfmgr-git
 ani-cli
 nwg-look-bin
 spotify
+timeshift-autosnap
+timeshift-systemd-timer
 topgrade
 ttf-ms-fonts
 wlogout

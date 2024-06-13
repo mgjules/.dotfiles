@@ -47,6 +47,7 @@ qt5-wayland
 ripgrep
 rofi-wayland
 stow
+timeshift
 tldr
 ttf-hack-nerd
 udiskie
