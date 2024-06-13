@@ -2,6 +2,7 @@
 1password-cli
 aconfmgr-git
 ani-cli
+nwg-look-bin
 spotify
 topgrade
 ttf-ms-fonts

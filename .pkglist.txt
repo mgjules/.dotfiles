@@ -4,6 +4,7 @@ bluez
 bluez-utils
 brightnessctl
 chromium
+dconf-editor
 dunst
 efibootmgr
 exfat-utils
@@ -24,7 +25,6 @@ lazygit
 libpulse
 linux
 linux-firmware
-lxappearance
 man-pages
 neofetch
 neovim
