@@ -89,13 +89,8 @@ button:hover {
   background-color: #24283b;
   border-radius: 5px;
   border: 1px solid transparent;
-}
-
-#network,
-#cpu,
-#memory,
-#battery {
-  padding-right: 1.4em;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .modules-left {
@@ -121,7 +116,7 @@ button:hover {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-  border-color: #f53c3c;
+  border-color: #db4b4b;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: steps(12);
@@ -154,47 +149,11 @@ button:hover {
   background-color: #eb4d4b;
 }
 
-#keyboard-state {
-  background: #97e1ad;
-  color: #000000;
-  /*padding: 0 0px;*/
-  /*margin: 0 5px;*/
-  /*min-width: 16px;*/
+#custom-power {
+  border-color: #db4b4b;
+  border-style: dotted;
 }
 
-#keyboard-state > label {
-  padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-  background-color: transparent;
-}
-
-#privacy {
-  padding: 0;
-}
-
-#privacy-item {
-  padding: 0 5px;
-  color: white;
-}
-
-#privacy-item.screenshare {
-  background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-  background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-  background-color: #0069d4;
+#custom-power:hover {
+  border-style: solid;
 }
