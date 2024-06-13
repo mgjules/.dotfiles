@@ -19,7 +19,7 @@ configuration {
     alt-color: #111111FF;
     wbg-color: #24283bFF;
     w-border: 1px solid;
-    w-border-color: rgba(46,52,64,0);
+    w-border-color: rgba(46,52,64,1);
     w-padding: 12px;
     kl: #7aa2f7;
     background-color: @wbg-color;
