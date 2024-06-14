@@ -1,7 +1,7 @@
 configuration {
     modi: "drun";
     show-icons: true;
-    display-drun: "";
+    display-drun: " ";
 }
 
 * {
@@ -59,7 +59,9 @@ prompt {
 
 inputbar {
     color: @kl;
-    children: ["entry"];
+    spacing: @g-spacing;
+    margin: @g-margin;
+    children: ["prompt", "entry"];
 }
 
 entry {
