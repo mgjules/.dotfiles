@@ -103,7 +103,7 @@
     "format-linked": "{ifname} (No IP)  ",
     "format-disconnected": "Disconnected ⚠ ",
     // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-    "on-click": "pidof nmtui || kitty nmtui",
+    "on-click": "pidof nmtui || kitty --title nmtui nmtui",
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
@@ -122,6 +122,6 @@
       "car": " ",
       "default": ["", " ", " "],
     },
-    "on-click": "pavucontrol",
+    "on-click": "pidof pavucontrol || pavucontrol",
   },
 }
