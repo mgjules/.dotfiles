@@ -10,6 +10,8 @@ dconf-editor
 dunst
 efibootmgr
 exfat-utils
+fd
+ffmpegthumbnailer
 fzf
 git
 git-delta
@@ -21,6 +23,7 @@ hyprland
 hyprlock
 hyprpaper
 intel-ucode
+jq
 keychain
 kitty
 lazygit
@@ -52,11 +55,14 @@ tldr
 ttf-hack-nerd
 udiskie
 udisks2
+unarchiver
+unarj
 unzip
 waybar
 wireplumber
 wl-clipboard
 xdg-user-dirs
+yazi
 z
 zram-generator
 zsh
