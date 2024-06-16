@@ -50,6 +50,7 @@ qt5-wayland
 ripgrep
 rofi-wayland
 stow
+tailscale
 timeshift
 tldr
 ttf-hack-nerd
