@@ -39,6 +39,7 @@ npm
 ntfs-3g
 openssh
 otf-font-awesome
+papirus-icon-theme
 pavucontrol
 pcmanfm
 pipewire

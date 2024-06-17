@@ -3,7 +3,7 @@
 
 include "/home/mike/.gtkrc-2.0.mine"
 gtk-theme-name="tokyonight-gtk"
-gtk-icon-theme-name="tokyonight"
+gtk-icon-theme-name="Papirus-Dark"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="Adwaita"
 gtk-cursor-theme-size=24
