@@ -16,6 +16,7 @@ fzf
 git
 git-delta
 go
+gparted
 gst-plugin-pipewire
 htop
 hypridle
@@ -46,10 +47,11 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
-polkit-kde-agent
+polkit-gnome
 qt5-wayland
 ripgrep
 rofi-wayland
+rpi-imager
 stow
 tailscale
 timeshift
