@@ -3,6 +3,7 @@
 aconfmgr-git
 ani-cli
 nwg-look-bin
+papirus-folders
 spotify
 timeshift-autosnap
 timeshift-systemd-timer
