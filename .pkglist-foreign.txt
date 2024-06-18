@@ -2,6 +2,7 @@
 1password-cli
 aconfmgr-git
 ani-cli
+cpu-x
 nwg-look-bin
 papirus-folders
 spotify
