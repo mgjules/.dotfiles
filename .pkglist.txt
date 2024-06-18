@@ -67,6 +67,7 @@ waybar
 wireplumber
 wl-clipboard
 xdg-user-dirs
+xorg-xhost
 yazi
 z
 zram-generator
