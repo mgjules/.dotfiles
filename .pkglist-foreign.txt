@@ -3,6 +3,7 @@
 aconfmgr-git
 ani-cli
 cpu-x
+hyprpicker
 nwg-look-bin
 papirus-folders
 spotify
