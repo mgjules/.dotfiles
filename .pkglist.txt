@@ -39,6 +39,7 @@ networkmanager
 nodejs
 npm
 ntfs-3g
+obs-studio
 openssh
 otf-font-awesome
 p7zip
