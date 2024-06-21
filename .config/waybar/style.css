@@ -6,13 +6,11 @@
 }
 
 window#waybar {
-  /*background-color: rgba(43, 48, 59, 0.8);*/
-  background-color: transparent;
-  border-bottom: none;
+  background-color: rgba(30, 32, 48, 0.75);
+  border-bottom: 1px solid #1f2335;
   color: #ffffff;
   transition-property: all;
   transition-duration: 0.5s;
-  /*padding: 20px 20px;*/
 }
 
 window#waybar.hidden {
@@ -21,7 +19,6 @@ window#waybar.hidden {
 
 button {
   border: none;
-  border-radius: 5px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
@@ -31,34 +28,24 @@ button:hover {
   box-shadow: none;
 }
 
-#workspaces button:first-child {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-#workspaces button:last-child {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
 #workspaces button {
   border: none;
   border-radius: 0;
   /*padding: 0 0.4em;*/
   color: #c0caf5;
-  background-color: #24283b;
+  background-color: #292e42;
   min-width: 20px;
 }
 
 #workspaces button:hover {
-  background-color: #9274ca;
+  background-color: #9d7cd8;
   color: #000000;
   box-shadow: inherit;
   text-shadow: inherit;
 }
 
 #workspaces button.active {
-  background-color: #9274ca;
+  background-color: #9d7cd8;
   color: #000000;
 }
 
@@ -77,35 +64,33 @@ button:hover {
 }
 
 #window {
-  border-radius: 5px;
   padding: 0.3em 0.7em;
-  /*border: 1px solid #595959;*/
-  background-color: #24283b;
 }
 
 .modules-right .module {
   padding: 0.3em 0.7em;
   color: #c0caf5;
-  background-color: #24283b;
-  border-radius: 5px;
+  background-color: #292e42;
   border: 1px solid transparent;
   transition-property: all;
   transition-duration: 0.5s;
 }
 
 .modules-left {
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
 
 .modules-right {
-  padding-top: 10px;
-  padding-right: 10px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 #battery.charging,
 #battery.plugged {
-  border-color: #26a65b;
+  border-color: #4fd6be;
 }
 
 @keyframes blink {
@@ -150,7 +135,7 @@ button:hover {
 }
 
 #custom-power {
-  border-color: #db4b4b;
+  border-color: #ff007c;
   border-style: dotted;
 }
 

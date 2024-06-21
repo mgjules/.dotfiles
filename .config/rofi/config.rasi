@@ -12,14 +12,14 @@ configuration {
     b-color: #000000FF;
     fg-color: #FFFFFFFF;
     fgp-color: #888888FF;
-    b-radius: 6px;
+    b-radius: 0px;
     g-padding: 8px;
-    hl-color: #9274caFF;
+    hl-color: #9d7cd8FF;
     hlt-color: #000000FF;
     alt-color: #111111FF;
-    wbg-color: #24283bFF;
+    wbg-color: #1f2335FF;
     w-border: 1px solid;
-    w-border-color: rgba(46,52,64,1);
+    w-border-color: #394b70FF;
     w-padding: 12px;
     kl: #7aa2f7;
     background-color: @wbg-color;
