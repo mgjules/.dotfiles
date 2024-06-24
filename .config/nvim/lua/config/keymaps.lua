@@ -5,17 +5,17 @@
 -- Define options for key mappings
 -- local opts = { remap = true, silent = true }
 
--- Key mappings for window navigation
-vim.keymap.set("n", "<C-S-Left>", "<C-h>", { desc = "Go to Left Window", remap = true })
-vim.keymap.set("n", "<C-S-Down>", "<C-j>", { desc = "Go to Lower Window", remap = true })
-vim.keymap.set("n", "<C-S-Up>", "<C-k>", { desc = "Go to Upper Window", remap = true })
-vim.keymap.set("n", "<C-S-Right>", "<C-l>", { desc = "Go to Right Window", remap = true })
-
 -- Key mappings for adjusting window size
-vim.keymap.set("n", "<A-S-Up>", "<C-Up>", { desc = "Increase Window Height", remap = true })
-vim.keymap.set("n", "<A-S-Down>", "<C-Down>", { desc = "Decrease Window Height", remap = true })
-vim.keymap.set("n", "<A-S-Left>", "<C-Left>", { desc = "Decrease Window Width", remap = true })
-vim.keymap.set("n", "<A-S-Right>", "<C-Right>", { desc = "Increase Window Width", remap = true })
+vim.keymap.del("n", "<C-Up>")
+vim.keymap.del("n", "<C-Down>")
+vim.keymap.del("n", "<C-Left>")
+vim.keymap.del("n", "<C-Right>")
+
+-- Key mappings for window navigation
+vim.keymap.set("n", "<C-Left>", "<C-h>", { desc = "Go to Left Window", remap = true })
+vim.keymap.set("n", "<C-Down>", "<C-j>", { desc = "Go to Lower Window", remap = true })
+vim.keymap.set("n", "<C-Up>", "<C-k>", { desc = "Go to Upper Window", remap = true })
+vim.keymap.set("n", "<C-Right>", "<C-l>", { desc = "Go to Right Window", remap = true })
 
 -- Key mappings for moving lines up and down in different modes
 vim.keymap.set("n", "<A-Down>", "<A-j>", { desc = "Move Down", remap = true })
