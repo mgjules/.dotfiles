@@ -33,6 +33,7 @@ jq
 keychain
 kitty
 lazygit
+lib32-nvidia-utils
 libpulse
 linux
 linux-firmware
@@ -44,7 +45,7 @@ networkmanager
 nodejs
 npm
 ntfs-3g
-nvidia-dkms
+nvidia
 obs-studio
 openssh
 otf-font-awesome
