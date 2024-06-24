@@ -1,8 +1,10 @@
+amd-ucode
 base
 base-devel
 bluez
 bluez-utils
 brightnessctl
+btrfs-progs
 chromium
 cups
 cups-pdf
@@ -15,10 +17,12 @@ ffmpegthumbnailer
 fzf
 git
 git-delta
+gnome-themes-extra
 go
 gparted
 grim
 gst-plugin-pipewire
+gtk-engine-murrine
 htop
 hypridle
 hyprland
@@ -32,6 +36,7 @@ lazygit
 libpulse
 linux
 linux-firmware
+linux-headers
 man-pages
 neofetch
 neovim
@@ -39,6 +44,7 @@ networkmanager
 nodejs
 npm
 ntfs-3g
+nvidia-dkms
 obs-studio
 openssh
 otf-font-awesome
@@ -57,6 +63,7 @@ qt6ct
 ripgrep
 rofi-wayland
 rpi-imager
+sassc
 slurp
 stow
 tailscale

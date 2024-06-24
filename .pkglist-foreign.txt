@@ -4,14 +4,14 @@ aconfmgr-git
 ani-cli
 cpu-x
 hyprpicker
+libva-nvidia-driver-git
 nwg-look-bin
-papirus-folders
 spotify
 timeshift-autosnap
 timeshift-systemd-timer
+tokyonight-gtk-theme-git
 topgrade
 ttf-ms-fonts
 wlogout
 yay
-yay-debug
 zsh-theme-powerlevel10k-git
