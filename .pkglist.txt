@@ -78,6 +78,7 @@ udisks2
 unarchiver
 unarj
 unzip
+vhs
 waybar
 wireplumber
 wl-clipboard
