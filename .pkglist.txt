@@ -58,6 +58,8 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 polkit-gnome
+python-pip
+qmk
 qt5-wayland
 qt5ct
 qt6ct
