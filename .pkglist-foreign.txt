@@ -6,6 +6,7 @@ cpu-x
 hyprpicker
 libva-nvidia-driver-git
 nwg-look-bin
+papirus-folders
 spotify
 timeshift-autosnap
 timeshift-systemd-timer
