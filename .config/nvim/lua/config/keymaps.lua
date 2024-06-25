@@ -12,10 +12,10 @@ vim.keymap.del("n", "<C-Left>")
 vim.keymap.del("n", "<C-Right>")
 
 -- Key mappings for window navigation
-vim.keymap.set("n", "<C-Left>", "<C-h>", { desc = "Go to Left Window", remap = true })
-vim.keymap.set("n", "<C-Down>", "<C-j>", { desc = "Go to Lower Window", remap = true })
-vim.keymap.set("n", "<C-Up>", "<C-k>", { desc = "Go to Upper Window", remap = true })
-vim.keymap.set("n", "<C-Right>", "<C-l>", { desc = "Go to Right Window", remap = true })
+vim.keymap.set("n", "<C-A-Left>", "<C-h>", { desc = "Go to Left Window", remap = true })
+vim.keymap.set("n", "<C-A-Down>", "<C-j>", { desc = "Go to Lower Window", remap = true })
+vim.keymap.set("n", "<C-A-Up>", "<C-k>", { desc = "Go to Upper Window", remap = true })
+vim.keymap.set("n", "<C-A-Right>", "<C-l>", { desc = "Go to Right Window", remap = true })
 
 -- Key mappings for moving lines up and down in different modes
 vim.keymap.set("n", "<A-Down>", "<A-j>", { desc = "Move Down", remap = true })
