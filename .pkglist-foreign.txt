@@ -4,8 +4,7 @@ aconfmgr-git
 ani-cli
 cpu-x
 hyprpicker
-libva-vdpau-driver-vp9-git
-libva-vdpau-driver-vp9-git-debug
+libva-nvidia-driver-git
 nwg-look-bin
 papirus-folders
 spotify
