@@ -35,6 +35,7 @@ kitty
 lazygit
 lib32-nvidia-utils
 libpulse
+libva-utils
 linux
 linux-firmware
 linux-headers
