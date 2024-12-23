@@ -27,10 +27,3 @@ vim.keymap.set("v", "<A-Up>", "<A-k>", { desc = "Move Up", remap = true })
 
 -- Oil
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
-
--- Buffers
-vim.keymap.set("n", "<leader>ba", "<CMD>%bd<CR>", { desc = "Delete all buffers" })
-vim.keymap.set("n", "<leader>bc", "<CMD>%bd|edit#|bd#<CR>", { desc = "Delete all buffers except current one" })
-
--- Windows
-vim.keymap.set("n", "<leader>wc", "<CMD>on<CR>", { desc = "Delete all windows except current one" })
