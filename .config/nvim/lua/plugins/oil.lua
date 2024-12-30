@@ -15,6 +15,13 @@ return {
         show_hidden = true,
       },
       natural_order = false,
+      keymaps = {
+        ["<C-s>"] = false,
+        ["<C-h>"] = false,
+        ["<C-t>"] = false,
+        ["<C-l>"] = false,
+        ["q"] = { "actions.close", mode = "n" },
+      },
     })
   end,
 }
