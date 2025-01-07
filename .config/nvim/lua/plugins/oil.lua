@@ -5,6 +5,7 @@ return {
   config = function()
     require("oil").setup({
       default_file_explorer = true,
+      skip_confirm_for_simple_edits = true,
       columns = {
         "icon",
         -- "permissions",
@@ -13,8 +14,14 @@ return {
       },
       view_options = {
         show_hidden = true,
+        is_always_hidden = function(name, _)
+          return name == ".." or name == ".git"
+        end,
       },
-      natural_order = false,
+      win_options = {
+        wrap = true,
+      },
+      watch_for_changes = true,
       keymaps = {
         ["<C-s>"] = false,
         ["<C-h>"] = false,
