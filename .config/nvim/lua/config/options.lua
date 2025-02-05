@@ -7,4 +7,7 @@ vim.opt.clipboard:append({ "unnamedplus" })
 vim.opt.scrolloff = 10
 vim.opt.relativenumber = false
 
+-- Set to false to disable auto format
+vim.g.lazyvim_eslint_auto_format = true
+
 vim.filetype.add({ extension = { templ = "templ" } })
