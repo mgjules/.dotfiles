@@ -27,3 +27,6 @@ vim.keymap.set("v", "<A-Up>", "<A-k>", { desc = "Move Up", remap = true })
 
 -- Oil
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+-- LSP
+vim.keymap.set("n", "<leader>cL", "<CMD>LspRestart<cr>", { desc = "Lsp Restart" })
