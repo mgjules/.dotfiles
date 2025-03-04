@@ -79,7 +79,7 @@ DISABLE_AUTO_TITLE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   aws
-  asdf
+  # asdf
   bazel
   colored-man-pages
   command-not-found
@@ -125,16 +125,17 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # pnpm
-export PNPM_HOME="/Users/mike/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
 
-export PATH="/Users/mike/.nvim/bin:$PATH"
+export PATH="$HOME/.nvim/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export PATH="/Users/mike/.local/share/gem/ruby/3.1.0/bin:$PATH"
+export PATH="$HOME/.local/share/gem/ruby/3.1.0/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # Change config directory for lazygit.
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -155,7 +156,7 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 
 function kitty_scrollback_edit_command_line() { 
-  local VISUAL='/Users/mike/.local/share/nvim/lazy/kitty-scrollback.nvim/scripts/edit_command_line.sh'
+  local VISUAL='$HOME/.local/share/nvim/lazy/kitty-scrollback.nvim/scripts/edit_command_line.sh'
   zle edit-command-line
   zle kill-whole-line
 }
@@ -166,3 +167,12 @@ bindkey '^x^e' kitty_scrollback_edit_command_line
 # [optional] pass arguments to kitty-scrollback.nvim in command-line editing mode
 # by using the environment variable KITTY_SCROLLBACK_NVIM_EDIT_ARGS
 # export KITTY_SCROLLBACK_NVIM_EDIT_ARGS=''
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
