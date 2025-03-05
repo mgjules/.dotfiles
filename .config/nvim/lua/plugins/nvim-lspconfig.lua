@@ -9,17 +9,6 @@ return {
             analyses = {
               fieldalignment = false,
             },
-            directoryFilters = {
-              "-.git",
-              "-.vscode",
-              "-.idea",
-              "-.vscode-test",
-              "-node_modules",
-              "-bazel-bin",
-              "-bazel-out",
-              "-bazel-testlogs",
-              "-bazel-entropy",
-            },
           },
         },
       },
