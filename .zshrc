@@ -176,3 +176,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
+
+# Colima
+# https://golang.testcontainers.org/system_requirements/using_colima/
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE="$HOME/.colima/default/docker.sock"
