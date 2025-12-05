@@ -51,11 +51,11 @@ setopt appendhistory
 setopt autocd
 
 # The most important aliases ever (the only thing I borrowed from OMZ)
-alias l='ls -lah'
-alias la='ls -lAh'
-alias ll='ls -lh'
-alias ls='ls -G'
-alias lsa='ls -lah'
+alias l='ls -lah --color'
+alias la='ls -lAh --color'
+alias ll='ls -lh --color'
+alias ls='ls -G --color'
+alias lsa='ls -lah --color'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
