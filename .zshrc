@@ -68,3 +68,14 @@ eval "$(starship init zsh)"
 
 # opencode
 export PATH=/home/mike/.opencode/bin:$PATH
+
+# Go
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# NVM
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Added by `rbenv init` on Fri Dec  5 05:16:15 PM +04 2025
+eval "$(rbenv init - --no-rehash zsh)"
