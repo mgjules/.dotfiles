@@ -1,11 +1,11 @@
 DISABLE_AUTO_TITLE="true"
 
 # pnpm
-# export PNPM_HOME="$HOME/Library/pnpm"
-# case ":$PATH:" in
-#   *":$PNPM_HOME:"*) ;;
-#   *) export PATH="$PNPM_HOME:$PATH" ;;
-# esac
+export PNPM_HOME="/home/mike/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end
 
 # export PATH="$HOME/.local/share/gem/ruby/3.1.0/bin:$PATH"
