@@ -65,3 +65,6 @@ eval "$(zoxide init zsh)"
 
 # Set up the Starship prompt
 eval "$(starship init zsh)"
+
+# opencode
+export PATH=/home/mike/.opencode/bin:$PATH
