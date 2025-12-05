@@ -1,4 +1,3 @@
-
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH=$PATH:$(go env GOPATH)/bin
 export NVM_DIR="$HOME/.nvm"
