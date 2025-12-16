@@ -88,3 +88,11 @@ export PATH=$PATH:$(go env GOPATH)/bin
 
 # Added by `rbenv init` on Fri Dec  5 05:16:15 PM +04 2025
 eval "$(rbenv init - --no-rehash zsh)"
+
+# Nvidia stuffs to enable hardware acceleration
+export NVD_BACKEND=direct
+export LIBVA_DRIVER_NAME=nvidia
+
+export MOZ_X11_EGL=1
+export MOZ_DISABLE_RDD_SANDBOX=1
+export CUDA_DISABLE_PERF_BOOST=1xport LIBVA_DRIVER_NAME="nvidia"
