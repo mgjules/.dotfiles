@@ -96,3 +96,6 @@ export LIBVA_DRIVER_NAME=nvidia
 export MOZ_X11_EGL=1
 export MOZ_DISABLE_RDD_SANDBOX=1
 export CUDA_DISABLE_PERF_BOOST=1xport LIBVA_DRIVER_NAME="nvidia"
+
+# Disable sound
+setopt NO_BEEP
