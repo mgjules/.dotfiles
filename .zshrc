@@ -1,5 +1,20 @@
 DISABLE_AUTO_TITLE="true"
 
+# AUTOCOMPLETION
+
+# initialize autocompletion
+autoload -U compinit && compinit
+
+HISTFILE=~/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
+setopt appendhistory
+setopt HIST_EXPIRE_DUPS_FIRST
+
+# autocompletion using arrow keys (based on history)
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
+
 # pnpm
 export PNPM_HOME="/home/mike/.local/share/pnpm"
 case ":$PATH:" in
@@ -40,12 +55,6 @@ export CFLAGS="-Wno-error=implicit-function-declaration"
 # [optional] pass arguments to kitty-scrollback.nvim in command-line editing mode
 # by using the environment variable KITTY_SCROLLBACK_NVIM_EDIT_ARGS
 # export KITTY_SCROLLBACK_NVIM_EDIT_ARGS=''
-
-
-HISTFILE=~/.zsh_history
-HISTSIZE=100000
-SAVEHIST=100000
-setopt appendhistory
 
 # Move to directories without cd
 setopt autocd
