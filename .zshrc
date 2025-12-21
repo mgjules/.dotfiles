@@ -93,3 +93,5 @@ export CUDA_DISABLE_PERF_BOOST=1xport LIBVA_DRIVER_NAME="nvidia"
 
 # Disable sound
 setopt NO_BEEP
+
+export EDITOR=nvim
