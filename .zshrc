@@ -27,7 +27,7 @@ alias ls='ls -G --color'
 alias lsa='ls -lah --color'
 
 # pnpm
-export PNPM_HOME="/home/mike/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -75,7 +75,7 @@ eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 # opencode
-export PATH=/home/mike/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 
 # Go
 export PATH=$PATH:$(go env GOPATH)/bin
