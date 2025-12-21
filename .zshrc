@@ -16,8 +16,9 @@ source ~/.config/zsh/zsh-completions/zsh-completions.plugin.zsh
 # zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=""
-export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=""
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=transparent,fg=cyan,bold'
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=transparent,fg=red,bold'
+export HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS='i'
 
 # The most important aliases ever (the only thing I borrowed from OMZ)
 alias l='ls -lah --color'
