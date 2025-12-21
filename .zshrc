@@ -11,7 +11,7 @@ setopt HIST_FIND_NO_DUPS
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.config/zsh/zsh-completions/zsh-completions.plugin.zsh
+fpath=(~/.config/zsh/zsh-completions/src $fpath)
 
 # zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
@@ -20,6 +20,9 @@ export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="bg=transparent,fg=cyan,bold"
 export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="bg=transparent,fg=red,bold"
 export HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS="i"
 export HISTORY_SUBSTRING_SEARCH_PREFIXED="yes"
+
+# autocompletion
+autoload -U compinit && compinit
 
 # The most important aliases ever (the only thing I borrowed from OMZ)
 alias l='ls -lah --color'
