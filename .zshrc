@@ -1,19 +1,30 @@
 DISABLE_AUTO_TITLE="true"
 
-# AUTOCOMPLETION
-
-# initialize autocompletion
-autoload -U compinit && compinit
-
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 setopt appendhistory
-setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
 
-# autocompletion using arrow keys (based on history)
-bindkey '\e[A' history-search-backward
-bindkey '\e[B' history-search-forward
+# plugins
+source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.config/zsh/zsh-completions/zsh-completions.plugin.zsh
+
+# zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=""
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=""
+
+# The most important aliases ever (the only thing I borrowed from OMZ)
+alias l='ls -lah --color'
+alias la='ls -lAh --color'
+alias ll='ls -lh --color'
+alias ls='ls -G --color'
+alias lsa='ls -lah --color'
 
 # pnpm
 export PNPM_HOME="/home/mike/.local/share/pnpm"
@@ -23,16 +34,11 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# export PATH="$HOME/.local/share/gem/ruby/3.1.0/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
 # Change config directory for lazygit.
 export XDG_CONFIG_HOME="$HOME/.config"
 
-# VIM MODE
-# bindkey -v
-
-# export RUBY_CONFIGURE_OPTS="--with-zlib-dir=$(brew --prefix zlib) --with-openssl-dir=$(brew --prefix openssl@1.1) --with-readline-dir=$(brew --prefix readline) --with-libyaml-dir=$(brew --prefix libyaml) --with-gdbm-dir=$(brew --prefix gdbm)"
 export CFLAGS="-Wno-error=implicit-function-declaration"
 
 # IMPORTANT: kitty-scrollback.nvim only supports zsh 5.9 or greater for command-line editing,
@@ -59,13 +65,6 @@ export CFLAGS="-Wno-error=implicit-function-declaration"
 # Move to directories without cd
 setopt autocd
 
-# The most important aliases ever (the only thing I borrowed from OMZ)
-alias l='ls -lah --color'
-alias la='ls -lAh --color'
-alias ll='ls -lh --color'
-alias ls='ls -G --color'
-alias lsa='ls -lah --color'
-
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
@@ -81,18 +80,13 @@ export PATH=/home/mike/.opencode/bin:$PATH
 # Go
 export PATH=$PATH:$(go env GOPATH)/bin
 
-# NVM
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Added by `rbenv init` on Fri Dec  5 05:16:15 PM +04 2025
 eval "$(rbenv init - --no-rehash zsh)"
 
 # Nvidia stuffs to enable hardware acceleration
 export NVD_BACKEND=direct
 export LIBVA_DRIVER_NAME=nvidia
-
+## Mozilla firefox support
 export MOZ_X11_EGL=1
 export MOZ_DISABLE_RDD_SANDBOX=1
 export CUDA_DISABLE_PERF_BOOST=1xport LIBVA_DRIVER_NAME="nvidia"
