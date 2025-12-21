@@ -16,9 +16,10 @@ source ~/.config/zsh/zsh-completions/zsh-completions.plugin.zsh
 # zsh-history-substring-search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=transparent,fg=cyan,bold'
-export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=transparent,fg=red,bold'
-export HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS='i'
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="bg=transparent,fg=cyan,bold"
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="bg=transparent,fg=red,bold"
+export HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS="i"
+export HISTORY_SUBSTRING_SEARCH_PREFIXED="yes"
 
 # The most important aliases ever (the only thing I borrowed from OMZ)
 alias l='ls -lah --color'
@@ -94,5 +95,8 @@ export CUDA_DISABLE_PERF_BOOST=1xport LIBVA_DRIVER_NAME="nvidia"
 
 # Disable sound
 setopt NO_BEEP
+
+# Batman
+alias cat="bat --paging=never"
 
 export EDITOR=nvim
