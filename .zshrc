@@ -92,4 +92,8 @@ setopt NO_BEEP
 # Batman
 alias cat="bat --paging=never"
 
+# Completion
+source <(tailscale completion zsh)
+
+# Default editor
 export EDITOR=nvim
